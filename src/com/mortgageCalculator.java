@@ -51,10 +51,15 @@ public class mortgageCalculator {
                 break;
             else
                 System.out.println("Enter a number between 1,000 and 1,000,000.");
-
-
-
-
         }
+        while (true) {
+            System.out.print("Annual Interest Rate: ");
+            float annualInterestRate = scanner.nextFloat();
+            if (annualInterestRate >= 0 && annualInterestRate <= 30)
+                break;
+            else
+                System.out.println("Enter a value between 1 and 30");
+        }
+
     }
 }
