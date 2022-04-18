@@ -31,13 +31,30 @@ public class mortgageCalculator {
 //            System.out.println(input);
 //        }
 
-        String[] fruits = {"Apple", "Mango", "Orange"};
+//        String[] fruits = {"Apple", "Mango", "Orange"};
+//
+//        for (int i = 0; i < fruits.length; i++)
+//            System.out.println(fruits[i]);
+//
+//        for (String fruit : fruits)
+//            System.out.println(fruit);
 
-        for (int i = 0; i < fruits.length; i++)
-            System.out.println(fruits[i]);
+        final byte MONTHS_IN_YEAR = 12;
+        final byte PERCENT = 100;
 
-        for (String fruit : fruits)
-            System.out.println(fruit);
+        Scanner scanner = new Scanner(System.in);
 
+        while (true) {
+            System.out.print("Principal ($1k - $1M): ");
+            int principal = scanner.nextInt();
+            if (principal >= 1_000 && principal <= 1_000_000)
+                break;
+            else
+                System.out.println("Enter a number between 1,000 and 1,000,000.");
+
+
+
+
+        }
     }
 }
