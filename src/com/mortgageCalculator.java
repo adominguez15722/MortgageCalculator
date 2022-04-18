@@ -19,15 +19,25 @@ public class mortgageCalculator {
 //            System.out.println(input);
 
 
-        Scanner scanner = new Scanner(System.in);
-        String input = "";
-        while (!input.equals("quit")) {
-            System.out.println("Input: ");
-            input = scanner.next().toLowerCase();
-            if (input.equals("quit"))
-                break;
-            System.out.println(input);
-        }
+//        Scanner scanner = new Scanner(System.in);
+//        String input = "";
+//        while (true) {
+//            System.out.println("Input: ");
+//            input = scanner.next().toLowerCase();
+//            if (input.equals("pass"))
+//                continue;
+//            if (input.equals("quit"))
+//                break;
+//            System.out.println(input);
+//        }
+
+        String[] fruits = {"Apple", "Mango", "Orange"};
+
+        for (int i = 0; i < fruits.length; i++)
+            System.out.println(fruits[i]);
+
+        for (String fruit : fruits)
+            System.out.println(fruit);
 
     }
 }
